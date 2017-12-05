@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.error {
+	color: red;
+	font-size: small;
+	margin-left: 10px;
+}
+.label {
+	text-align:right;
+}
+.select {
+	text-align:left;
+}
+
+textarea {
+	width: 300px;
+	height: 100px;
+}
+
+input[type=submit] {
+	margin-left:50px;
+}
+
+h3{
+	margin-left: 50px;
+}
+
+table {
+	border-collapse:collapse;
+	margin: 50px;
+}
+
+td {
+	border: 1px solid lightgray;
+}
+
+
