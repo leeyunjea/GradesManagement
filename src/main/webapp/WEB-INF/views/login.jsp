@@ -7,9 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>학점관리</title>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/resources/css/login.css">
 </head>
 <body onload='document.f.username.focus();'>
-	<h3>Custom Login with Username and Password</h3>
+	<h3>사용자를 인증하세요.</h3>
 	
 	<c:if test="${not empty logoutMsg}">
 		<div style="color: #0000ff"> <h3>${logoutMsg}</h3>
@@ -25,20 +27,23 @@
 
 		<table>
 			<tr>
-				<td>User:</td>
+				<td id="label">User:</td>
 				<td><input type='text' name='username' value=''></td>
 			</tr>
 			<tr>
-				<td>Password:</td>
+				<td id="label">Password:</td>
 				<td><input type='password' name='password' /></td>
 			</tr>
-			<tr>
+			<!-- <tr>
 				<td colspan='2'><input name="submit" type="submit"
 					value="Login" /></td>
-			</tr>
+			</tr> -->
 			<input type="hidden" name="${_csrf.parameterName}"
 				value="${_csrf.token}" />
 		</table>
+		
+		<td colspan='2'><input name="submit" type="submit"
+					value="Login" />
 	</form>
 </body>
 </html>
