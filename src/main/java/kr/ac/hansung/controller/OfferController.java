@@ -95,30 +95,4 @@ public class OfferController {
 		
 		return "enrollmentRead";
 	}
-	
-	/*@RequestMapping("/createoffer")
-	public String createIffer(Model model) {
-		
-		model.addAttribute("offer", new Offer());
-		
-		return "createoffer";
-	}*/
-	
-	/*@RequestMapping("/docreate")
-	public String doCreate(Model model, @Valid Offer offer, BindingResult result) {
-		
-		if(result.hasErrors()) {
-			System.out.println("===Form data does not validated");
-			List<ObjectError> errors = result.getAllErrors();
-			for(ObjectError error:errors) {
-				System.out.println(error.getDefaultMessage());
-			}
-			
-			return "createoffer";
-		}
-		
-		offerService.insert(offer);
-		
-		return "offercreated";
-	}*/
 }
